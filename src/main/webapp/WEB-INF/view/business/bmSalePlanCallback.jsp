@@ -5,17 +5,28 @@
 						   
 							<c:if test="${totalcnt eq 0 }">
 								<tr>
-									<td colspan="4">데이터가 존재하지 않습니다.</td>
+									<td colspan="9">데이터가 존재하지 않습니다.</td>
 								</tr>
 							</c:if>
 							
 							<c:if test="${totalcnt > 0 }">								
 								<c:forEach items="${searchlist}" var="list">
 									<tr>
-										<td>${list.ntc_no}</td>
-										<td>${list.ntc_title}</td>
-										<td>${list.ntc_regdate}</td>
+										
+										<td>${list.sales_reg_date}</td>
+										
+									<c:if test="${userType eq 'B'}">
 										<td>${list.loginID}</td>
+									</c:if>
+										<td>${list.m_ct_nm}</td>
+										<td>${list.l_ct_nm}</td>
+										<td>${list.product_nm}</td>
+										<td>${list.goal_amt}</td>
+										<td>${list.estimate_cnt}</td>
+									<c:if test="${userType eq 'B'}">
+										<td>${list.a_rate}</td>
+									</c:if>
+										<td>${list.memo}</td>
 									</tr>
 								</c:forEach>
 							</c:if>

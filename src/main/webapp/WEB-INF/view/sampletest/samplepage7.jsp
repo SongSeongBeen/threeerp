@@ -49,7 +49,7 @@
                         </span> <a href="/sampletest/samplepage3.do" class="btn_set refresh">새로고침</a>
                   </p>
                   
-                  <br> page7     
+                  <br> page7  
            </div> <!--// content -->
 
                <h3 class="hidden">풋터 영역</h3>

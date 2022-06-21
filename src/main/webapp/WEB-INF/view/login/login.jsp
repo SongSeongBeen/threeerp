@@ -634,7 +634,8 @@ function fLoginProc() {
 		fLoginProcResult(data);
 	};
 
-	callAjax("/loginProc.do", "post", "json", true, $("#myForm")	.serialize(), resultCallback);
+	callAjax("/loginProc.do", "post", "json", true, $("#myForm")
+			.serialize(), resultCallback);
 }
 
 /* 로그인 결과 */

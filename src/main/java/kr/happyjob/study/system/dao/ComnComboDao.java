@@ -15,7 +15,7 @@ public interface ComnComboDao {
 	
 	/** 거래처 목록 조회 */
 	public List<comcombo> selectclientlist(Map<String, Object> paramMap);
-	
+	   
 	/** 제품  목록 조회 */
 	public List<comcombo> selectproductlist(Map<String, Object> paramMap);
 		
